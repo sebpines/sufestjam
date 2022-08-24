@@ -8,7 +8,6 @@ public class ArrowScript : MonoBehaviour
     public float distanceToMove = 20;
     private void OnMouseDown()
     {
-        gameCamera.transform.position += Vector3.right * distanceToMove;
-
+      gameCamera.transform.position += Vector3.right * distanceToMove;
     }
 }
