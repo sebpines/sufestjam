@@ -5,10 +5,13 @@ using UnityEngine;
 public class ArrowForwardScript : MonoBehaviour
 {
     public Camera gameCamera;
-    public float distanceToMove = 11;
-    private void OnMouseDown()
+    private float distanceToMove = 12;
+
+    
+    void OnMouseDown()
     {
         gameCamera.transform.position += Vector3.up * distanceToMove;
 
     }
 }
+

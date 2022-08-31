@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6569664598681544255}
   - component: {fileID: 6569664598681544252}
-  - component: {fileID: 6569664598681544254}
   - component: {fileID: 6569664598681544257}
+  - component: {fileID: 830132197941821246}
   m_Layer: 0
   m_Name: arrowsForwardPrefab
   m_TagString: Untagged
@@ -84,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6569664598681544254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6569664598681544253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f93af5bb561fb434c9d1f1ca732595f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameCamera: {fileID: 0}
-  distanceToMove: 11
 --- !u!60 &6569664598681544257
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -135,3 +121,17 @@ PolygonCollider2D:
       - {x: 0.14999999, y: -0.14}
       - {x: 0.16, y: -0.11}
       - {x: 0.16, y: 0.049999997}
+--- !u!114 &830132197941821246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569664598681544253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c201c65acb8f0dc409b7be9611bdb81c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 0}
+  distanceToMove: 11
