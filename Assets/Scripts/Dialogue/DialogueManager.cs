@@ -4,15 +4,23 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
+
+[Header("Globals Ink File")]
+[SerializeField] private InkFile globalsInkFile;
+
 [Header("Dialogue UI")]
 [SerializeField] private GameObject dialoguePanel;
 [SerializeField] private TextMeshProUGUI dialogueText;
 [SerializeField] private TextMeshProUGUI displayNameText;
 [SerializeField] private Animator portraitAnimator;
 private Animator layoutAnimator;
+public Button m_dialogCont;
+public GameObject arrowNav;
 
 [Header("ChoicesUI")]
 [SerializeField] private GameObject[] choices;
@@ -27,6 +35,8 @@ private Animator layoutAnimator;
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
   
+  private NarrativeVariables narrativeVariables;
+  
   private void Awake()
   {
     if (instance != null)
@@ -34,6 +44,8 @@ private Animator layoutAnimator;
         Debug.LogWarning("Found more than one Dialogue Manager in scene");
         }
     instance = this;
+    
+    narrativeVariables = new NarrativeVariables(globalsInkFile.filePath);
   }
   
   public static DialogueManager GetInstance()
@@ -45,6 +57,7 @@ private Animator layoutAnimator;
   {
     dialogueIsPlaying = false;
     dialoguePanel.SetActive(false);
+    m_dialogCont.onClick.AddListener(ContinueStory);
     
     layoutAnimator = dialoguePanel.GetComponent<Animator>();
   
@@ -64,10 +77,11 @@ private Animator layoutAnimator;
     return;
     }
     
-    if (Input.GetKeyDown("space"))
+    /*if (Input.GetKeyDown("space"))
     {
     ContinueStory();
-    }
+    }*/
+    
   }
   
   public void EnterDialogueMode(TextAsset inkJSON)
@@ -75,6 +89,9 @@ private Animator layoutAnimator;
     currentStory = new Story(inkJSON.text);
     dialogueIsPlaying = true;
     dialoguePanel.SetActive(true);
+    arrowNav.SetActive(false);
+    
+    narrativeVariables.StartListening(currentStory);
   
     ContinueStory();
   }
@@ -84,6 +101,9 @@ private Animator layoutAnimator;
     dialogueIsPlaying = false;
     dialoguePanel.SetActive(false);
     dialogueText.text = "";
+    arrowNav.SetActive(true);
+    narrativeVariables.StopListening(currentStory);
+    
   }
   
   private void ContinueStory()
@@ -153,14 +173,14 @@ private Animator layoutAnimator;
     }
   }
   
-  /*private IEnumerator SelectFirstChoice()
+  private IEnumerator SelectFirstChoice()
   {
     //Event System requires we clear it first, then wait
     // for at least one frame before we set the current selected object
     EventSystem.current.SetSelectedGameObject(null);
     yield return new WaitForEndOfFrame();
     EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
-  }*/
+  }
   
   public void MakeChoice(int choiceIndex)
   {

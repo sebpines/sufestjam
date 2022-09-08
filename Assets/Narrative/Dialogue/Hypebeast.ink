@@ -1,3 +1,5 @@
+INCLUDE ../globals.ink
+
 Hey! Are you going to the show? #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
 Oh, hi. No, what show? #speaker: Peyton #portrait:mc_thinking #layout:right
 The Private Label FRTZY Trendz Trade Show! #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left

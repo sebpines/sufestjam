@@ -1,3 +1,5 @@
+INCLUDE ../globals.ink
+
 Pardon me, do you know how much longer until we reach Stonefolk? #speaker: Bashful Traveller #portrait:npc2_neutral #layout:left
 Um, I think it’ll still be another three or four hours. #speaker: Peyton #portrait:mc_happy #layout:right
 Gosh, that seems so long, thank you. #speaker: Bashful Traveller #portrait:npc2_neutral #layout:left

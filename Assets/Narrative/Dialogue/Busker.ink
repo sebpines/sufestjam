@@ -1,3 +1,5 @@
+INCLUDE ../globals.ink
+
 Like my tunes? #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Sort of, it’s pretty. What song is that? #speaker: Peyton #portrait:mc_thinking #layout:right
 Doesn’t have a name yet, I’m still working on it. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
