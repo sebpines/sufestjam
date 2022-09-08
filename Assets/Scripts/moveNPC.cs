@@ -3,44 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moveNPC : MonoBehaviour
-{   bool forward;
+{
+    bool forward;
+    public GameObject NPC;
     //get overlay gameObject
-    public GameObject overlay;
+    public GameObject Overlay;
     //distance NPC moves
-    public float distanceToMove = 2;
+    public float distanceToMoveNPC = 2;
     //distance overlay moved
-    public float distanceToMoveOverlay = 5;
+    public float distanceToMoveOverlay = 10;
 
     // Start is called before the first frame update
     void Start()
     {
         //NPC is not forward
         forward = false;
-    
+
     }
-
-    void Update()
+    void OnMouseDown()
     {
-        GameObject.Find("talkingOverlay");
-
-        if (Input.GetMouseButtonDown(0))
+        //if NPC is forward they and the overlay move back
+        if (forward == true)
         {
-            //if NPC is forward they and the overlay move back
-            if (forward == true)
-            {
-               transform.Translate(Vector3.forward * distanceToMove);
-               overlay.transform.Translate(Vector3.forward * distanceToMoveOverlay);
-                forward = false;
-                Debug.Log("back");
-            }
-            //if NPC is clicked well back they and the overlay move forward
-            else if (forward == false)
-            {
-                transform.Translate(Vector3.forward * (-distanceToMove));
-                overlay.transform.Translate(Vector3.forward * (-distanceToMoveOverlay));
-                forward = true;
-                Debug.Log("forward");
-            }
+            NPC.transform.Translate(Vector3.forward * distanceToMoveNPC);
+            Overlay.transform.Translate(Vector3.down * distanceToMoveOverlay);
+            forward = false;
+            Debug.Log("back");
+        }
+        //if NPC is clicked well back they and the overlay move forward
+        else if (forward == false)
+        {
+            NPC.transform.Translate(Vector3.forward * (-distanceToMoveNPC));
+            Overlay.transform.Translate(Vector3.down * (-distanceToMoveOverlay));
+            forward = true;
+            Debug.Log("forward");
         }
     }
-    }
+}
