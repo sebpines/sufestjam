@@ -38,7 +38,7 @@ public class moveNPC : MonoBehaviour
         }
         //on button press if textbox doesnt exist and its forward
 
-        if ((Input.GetKeyUp("space")) && dialoguePlaying == false && forward == true)
+        if ((Input.GetMouseButtonUp(0)) && dialoguePlaying == false && forward == true)
         {
             NPC.transform.Translate(Vector3.forward * distanceToMoveNPC);
             Overlay.transform.Translate(Vector3.down * distanceToMoveOverlay);
