@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class DialogueManager : MonoBehaviour
 [SerializeField] private TextMeshProUGUI displayNameText;
 [SerializeField] private Animator portraitAnimator;
 private Animator layoutAnimator;
+public Button m_dialogCont;
+public GameObject arrowNav;
 
 [Header("ChoicesUI")]
 [SerializeField] private GameObject[] choices;
@@ -47,6 +50,7 @@ private Animator layoutAnimator;
     dialoguePanel.SetActive(false);
     
     layoutAnimator = dialoguePanel.GetComponent<Animator>();
+    m_dialogCont.onClick.AddListener(ContinueStory);
   
     choicesText = new TextMeshProUGUI[choices.Length];
     int index = 0;
@@ -64,10 +68,10 @@ private Animator layoutAnimator;
     return;
     }
     
-    if (Input.GetKeyDown("space"))
+    /*if (Input.GetKeyDown("space"))
     {
     ContinueStory();
-    }
+    }*/
   }
   
   public void EnterDialogueMode(TextAsset inkJSON)
@@ -75,6 +79,7 @@ private Animator layoutAnimator;
     currentStory = new Story(inkJSON.text);
     dialogueIsPlaying = true;
     dialoguePanel.SetActive(true);
+    arrowNav.SetActive(false);
   
     ContinueStory();
   }
@@ -84,6 +89,7 @@ private Animator layoutAnimator;
     dialogueIsPlaying = false;
     dialoguePanel.SetActive(false);
     dialogueText.text = "";
+    arrowNav.SetActive(true);
   }
   
   public void ContinueStory()
@@ -153,14 +159,14 @@ private Animator layoutAnimator;
     }
   }
   
-  /*private IEnumerator SelectFirstChoice()
+  private IEnumerator SelectFirstChoice()
   {
     //Event System requires we clear it first, then wait
     // for at least one frame before we set the current selected object
     EventSystem.current.SetSelectedGameObject(null);
     yield return new WaitForEndOfFrame();
     EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
-  }*/
+  }
   
   public void MakeChoice(int choiceIndex)
   {
