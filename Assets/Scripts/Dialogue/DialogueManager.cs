@@ -86,7 +86,7 @@ private Animator layoutAnimator;
     dialogueText.text = "";
   }
   
-  private void ContinueStory()
+  public void ContinueStory()
   {
     if (currentStory.canContinue)
     {
