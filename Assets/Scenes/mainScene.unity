@@ -1162,6 +1162,18 @@ PrefabInstance:
       propertyPath: gameCamera
       value: 
       objectReference: {fileID: 64220238}
+    - target: {fileID: 6569664598681544252, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569664598681544252, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569664598681544252, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6569664598681544253, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
       propertyPath: m_Name
       value: arrowsForwardPrefab (4)
@@ -2526,6 +2538,7 @@ GameObject:
   - component: {fileID: 676965543}
   - component: {fileID: 676965540}
   - component: {fileID: 676965544}
+  - component: {fileID: 676965545}
   m_Layer: 0
   m_Name: NPC1
   m_TagString: Untagged
@@ -2674,6 +2687,21 @@ MonoBehaviour:
   Overlay: {fileID: 764595841}
   distanceToMoveNPC: 2
   distanceToMoveOverlay: 10
+--- !u!114 &676965545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676965539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5875e55d327df2b49b539fdd02175e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 21300000, guid: e92ee7aff1844ef47be786f370c2653b, type: 3}
+  highlightSprite: {fileID: 21300000, guid: e9d6e0cf8c5ffbd41b663f614e5b0ad6, type: 3}
+  spriteRenderer: {fileID: 676965541}
 --- !u!1 &699732263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5068,6 +5096,7 @@ GameObject:
   - component: {fileID: 1452933809}
   - component: {fileID: 1452933812}
   - component: {fileID: 1452933813}
+  - component: {fileID: 1452933814}
   m_Layer: 0
   m_Name: NPC2
   m_TagString: Untagged
@@ -5204,6 +5233,21 @@ MonoBehaviour:
   Overlay: {fileID: 764595841}
   distanceToMoveNPC: 2
   distanceToMoveOverlay: 10
+--- !u!114 &1452933814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452933808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5875e55d327df2b49b539fdd02175e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 21300000, guid: 11ef831eda34e16429af1815fc828747, type: 3}
+  highlightSprite: {fileID: 21300000, guid: 648e534aa210e014a8849b9f7581139d, type: 3}
+  spriteRenderer: {fileID: 1452933810}
 --- !u!1001 &1453077285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6671,6 +6715,7 @@ GameObject:
   - component: {fileID: 1725538378}
   - component: {fileID: 1725538377}
   - component: {fileID: 1725538381}
+  - component: {fileID: 1725538382}
   m_Layer: 0
   m_Name: NPC3
   m_TagString: Untagged
@@ -6837,6 +6882,21 @@ MonoBehaviour:
   Overlay: {fileID: 764595841}
   distanceToMoveNPC: 2
   distanceToMoveOverlay: 10
+--- !u!114 &1725538382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725538376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5875e55d327df2b49b539fdd02175e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSprite: {fileID: 21300000, guid: 232ab17723e8116488687a239e146aeb, type: 3}
+  highlightSprite: {fileID: 21300000, guid: b97b79c350b576b4bb8da71eb29f0870, type: 3}
+  spriteRenderer: {fileID: 1725538379}
 --- !u!1001 &1734351937
 PrefabInstance:
   m_ObjectHideFlags: 0
