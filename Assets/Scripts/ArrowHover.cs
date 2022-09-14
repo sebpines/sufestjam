@@ -5,21 +5,32 @@ using UnityEngine;
 public class ArrowHover : MonoBehaviour
 { 
     SpriteRenderer sprite;
+    public bool startInactive = true;
+    public Color hoverColor = new Color(1,1,1,1);
+    public Color inactiveColor = new Color(1,1,1,0.5f);
+    Color startColor;
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        sprite.color = new Color(1, 1, 1, 0);
+        startColor = sprite.color;
+        if (startInactive)
+            sprite.color = inactiveColor;
     }
 
     void OnMouseOver()
     {
-        sprite.color = new Color(1, 1, 1, 1);
+        sprite.color = hoverColor;
     }
 
     void OnMouseExit()
     {
-        sprite.color = new Color(1, 1, 1, 0);
+        sprite.color = inactiveColor;
+    }
+    
+    public void ResetColor()
+    {
+        sprite.color = startColor;
     }
 }
 
