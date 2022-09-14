@@ -63,10 +63,18 @@ public GameObject arrowNav;
   
   private void Update()
   {
-    if (!dialogueIsPlaying)
+    
+    if (dialogueIsPlaying)
     {
-    return;
+        m_dialogCont.interactable = false;
     }
+    else
+    {
+        if (m_dialogCont.interactable == false)
+            m_dialogCont.interactable = true;
+        return;
+    }
+    
     
     /*if (Input.GetKeyDown("space"))
     {
