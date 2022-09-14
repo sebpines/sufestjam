@@ -7,7 +7,6 @@ using UnityEngine;
 public class ButtonInteractDelay : MonoBehaviour
 {
     public float btnInteractDelay = 0.5f;
-    bool isRunning = false;
     Button btn;
 
     private void Awake()
@@ -22,12 +21,12 @@ public class ButtonInteractDelay : MonoBehaviour
     
     void ButtonClicked()
     {
-        StartCoroutine(StopInteractabilityForTime(btnInteractDelay));
+        if (!btn.interactable) return; //if youre already in a delay, dont start a new one
+        StartCoroutine(StopInteractabilityForTime(btnInteractDelay)); //start the delay of interacting with button
     }
     
     IEnumerator StopInteractabilityForTime(float time)
     {
-        isRunning = true;
         btn.interactable = false;
         yield return new WaitForSeconds(time);
         btn.interactable = true;
