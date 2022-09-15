@@ -84,7 +84,7 @@ public GameObject arrowNav;
     ContinueStory();
   }
   
-  private void ExitDialogueMode()
+  public void ExitDialogueMode()
   {
     dialogueIsPlaying = false;
     dialoguePanel.SetActive(false);
