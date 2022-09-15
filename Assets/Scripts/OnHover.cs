@@ -8,10 +8,14 @@ public class OnHover : MonoBehaviour
     public Sprite defaultSprite;
     public Sprite highlightSprite;
     public SpriteRenderer spriteRenderer;
+    public AudioSource OverSFX;
 
-    void OnMouseOver()
+
+    void OnMouseEnter()
     {
         spriteRenderer.sprite = highlightSprite;
+        OverSFX.Play();
+
     }
     void OnMouseExit()
     {

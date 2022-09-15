@@ -5,16 +5,17 @@ using UnityEngine;
 public class ArrowHover : MonoBehaviour
 { 
     SpriteRenderer sprite;
-
+    public AudioSource OverSFX;
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         sprite.color = new Color(1, 1, 1, 0);
     }
 
-    void OnMouseOver()
+    void OnMouseEnter()
     {
         sprite.color = new Color(1, 1, 1, 1);
+        OverSFX.Play();
     }
 
     void OnMouseExit()
