@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArrowForwardScript : MonoBehaviour
 {
     public Camera gameCamera;
-    private float distanceToMove = 12;
+    public float distanceToMove = 12;
 
     
     void OnMouseDown()
