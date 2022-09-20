@@ -5,9 +5,17 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
+[Header ("Params")]
+[SerializeField] private float typingSpeed = 0.04f;
+[SerializeField] private GameObject continueHolder;
+
+[Header ("Globals Ink File")]
+[SerializeField] private InkFile globalsInkFile;
+
 [Header("Dialogue UI")]
 [SerializeField] private GameObject dialoguePanel;
 [SerializeField] private TextMeshProUGUI dialogueText;
@@ -25,10 +33,13 @@ public GameObject arrowNav;
   private Story currentStory;
   public bool dialogueIsPlaying { get; private set; }
   private static DialogueManager instance;
+  private Coroutine displayLineCoroutine;
   
   private const string SPEAKER_TAG = "speaker";
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
+  
+  private NarrativeVariables narrativeVariables;
   
   private void Awake()
   {
@@ -37,6 +48,7 @@ public GameObject arrowNav;
         Debug.LogWarning("Found more than one Dialogue Manager in scene");
         }
     instance = this;
+    narrativeVariables = new NarrativeVariables(globalsInkFile.filePath);
   }
   
   public static DialogueManager GetInstance()
@@ -67,11 +79,7 @@ public GameObject arrowNav;
     {
     return;
     }
-    
-    /*if (Input.GetKeyDown("space"))
-    {
-    ContinueStory();
-    }*/
+
   }
   
   public void EnterDialogueMode(TextAsset inkJSON)
@@ -80,6 +88,7 @@ public GameObject arrowNav;
     dialogueIsPlaying = true;
     dialoguePanel.SetActive(true);
     arrowNav.SetActive(false);
+    narrativeVariables.StartListening(currentStory);
   
     ContinueStory();
   }
@@ -90,19 +99,72 @@ public GameObject arrowNav;
     dialoguePanel.SetActive(false);
     dialogueText.text = "";
     arrowNav.SetActive(true);
+    narrativeVariables.StopListening(currentStory);
   }
   
   public void ContinueStory()
   {
     if (currentStory.canContinue)
-    {
-        dialogueText.text = currentStory.Continue();
-        DisplayChoices();
+    {   
+        if (displayLineCoroutine != null)
+        {
+            StopCoroutine(displayLineCoroutine);
+        }
+        //dialogueText.text = currentStory.Continue();
+        displayLineCoroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
         HandleTags(currentStory.currentTags);
     }
     else
     {
         ExitDialogueMode();
+    }
+  }
+  
+  private IEnumerator DisplayLine(string line)
+  {
+  //empty dialogue text
+  dialogueText.text = "";
+  continueHolder.SetActive(false);
+  HideChoices();
+  
+  bool isAddingRichTextTag = false;
+  
+  //display each letter on at a time
+  foreach(char letter in line.ToCharArray())
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            dialogueText.text = line;
+            break;
+        }
+        //check for rich text tage, if found, add it without waiting
+        if (letter == '<' || isAddingRichTextTag)
+        {
+            isAddingRichTextTag = true;
+            dialogueText.text += letter;
+            if (letter == '>')
+            {
+                isAddingRichTextTag = false;
+            }
+        }
+        //if not rich text, add the next letter and wait a small time
+        else
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }  
+    }
+    
+    //canContinueToNextLine = true;
+    continueHolder.SetActive(true);
+    DisplayChoices();
+  }
+  
+  private void HideChoices()
+  {
+    foreach (GameObject choiceButton in choices)
+    {
+    choiceButton.SetActive(false);
     }
   }
   

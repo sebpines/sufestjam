@@ -28,7 +28,8 @@ public class NarrativeVariables
     }
    
     public void StartListening (Story story)
-    {
+    { 
+        VariablesToStory(story);
         story.variablesState.variableChangedEvent += VariableChanged;
     }
     
@@ -39,6 +40,15 @@ public class NarrativeVariables
     
     private void VariableChanged(string name, Ink.Runtime.Object value)
     {
-        Debug.Log("Variable changed: " + name + " = " + value);
+        variables.Remove(name);
+        variables.Add(name, value);
+    }
+    
+    private void VariablesToStory(Story story)
+    {
+        foreach(KeyValuePair<string, Ink.Runtime.Object> variable in variables)
+        {
+            story.variablesState.SetGlobal(variable.Key, variable.Value);
+        }
     }
 }
