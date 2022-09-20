@@ -8,7 +8,7 @@ Oh… #speaker: Peyton #portrait:mc_thinking #layout:right
 -> writing_songs
 
 === professional_musician ===
--laughs- No! Far from it. #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
+<i>Laughs.</i> No! Far from it. #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 I’m not even sure if I even want to be one. I just like playing my music for people for now. #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 -> train_ride
 
@@ -36,7 +36,7 @@ You don’t have anywhere the stay? #speaker: Peyton #portrait:mc_thinking #layo
 No, I don’t know anyone in the city. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 The weather’s been nice enough though so roughing it in a park won’t be the worst. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 Well now I *really* hope you attract a good crowd, even at least so you don’t have to sleep on a bench. #speaker: Peyton #portrait:mc_happy #layout:right
--laughs- #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
+<i>Laughs.</i> #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Thanks. Maybe I’ll see you around? Think you can catch one of my little shows? #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Well... #speaker: Peyton #portrait:mc_thinking #layout:right
 + [You can count on me! I’ll be your new number 1 fan.]
