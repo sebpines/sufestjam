@@ -1,3 +1,8 @@
+INCLUDE ../globals.ink
+
+{ hypebeast_current_dialogue == "": -> main |-> second_talk }
+
+=== main ===
 Hey! Are you going to the show? #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
 Oh, hi. No, what show? #speaker: Peyton #portrait:mc_thinking #layout:right
 The Private Label FRTZY Trendz Trade Show! #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
@@ -71,4 +76,10 @@ I can feel it. #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:le
 Well I look forward to seeing you in some magazines some day or something! #speaker: Peyton #portrait:mc_happy #layout:right
 I think I’ll be too cool for magazines, but thanks! #speaker:Hoodie Wearing Hypebeast #portrait:npc3_neutral #layout:left
 Keep an eye out for me! #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
+~hypebeast_current_dialogue = "2"
+-> END
+
+=== second_talk ===
+Yeah... Those Fiadora N900000000's those would be so sick.#speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
+<i>They seem lost in space thinking about expensive shoes.</i>#speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
 -> END

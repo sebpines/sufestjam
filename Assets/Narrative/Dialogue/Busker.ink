@@ -1,3 +1,8 @@
+INCLUDE ../globals.ink
+
+{ busker_current_dialogue == "": -> first_talk |-> second_talk }
+
+=== first_talk ===
 Like my tunes? #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Sort of, it’s pretty. What song is that? #speaker: Peyton #portrait:mc_thinking #layout:right
 Doesn’t have a name yet, I’m still working on it. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
@@ -35,7 +40,7 @@ I’m kind of counting on getting a bit of money to afford someplace to stay. #s
 You don’t have anywhere the stay? #speaker: Peyton #portrait:mc_thinking #layout:right
 No, I don’t know anyone in the city. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 The weather’s been nice enough though so roughing it in a park won’t be the worst. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
-Well now I *really* hope you attract a good crowd, even at least so you don’t have to sleep on a bench. #speaker: Peyton #portrait:mc_happy #layout:right
+Well now I <b><i>really</i></b> hope you attract a good crowd, even at least so you don’t have to sleep on a bench. #speaker: Peyton #portrait:mc_happy #layout:right
 <i>Laughs.</i> #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Thanks. Maybe I’ll see you around? Think you can catch one of my little shows? #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Well... #speaker: Peyton #portrait:mc_thinking #layout:right
@@ -55,4 +60,9 @@ Well, it’ll be nice to see you if you can make it out. #speaker: Optimistic Bu
 === convo_end ===
 I better get back to finishing this song. Hopefully, I’ll see you around. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 See you around! #speaker: Peyton #portrait:mc_happy #layout:right
+~ busker_current_dialogue = "visited"
+-> END
+
+=== second_talk ===
+<i>He's humming a tune and strumming lightly on the guitar, I don't think he notices you.</i> #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 -> END

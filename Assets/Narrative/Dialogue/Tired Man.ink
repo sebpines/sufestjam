@@ -1,3 +1,8 @@
+INCLUDE ../globals.ink
+
+{ tired_current_dialogue == "2": -> second_talk |-> main }
+
+=== main ===
 … #speaker:Tired Man #portrait:npc4_neutral #layout:left
 Hi #speaker: Peyton #portrait:mc_happy #layout:right
 … #speaker:Tired Man #portrait:npc4_neutral #layout:left
@@ -43,5 +48,25 @@ Give yourself ten years, and you could be right where I am now. #speaker:Tired M
 I– okay.  #speaker: Peyton #portrait:mc_upset #layout:right
 I’m going to go. #speaker: Peyton #portrait:mc_upset #layout:right
 Sure. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+~ tired_current_dialogue = "2"
+-> END
+
+=== second_talk ===
+… #speaker:Tired Man #portrait:npc4_neutral #layout:left
+… #speaker: Peyton #portrait:mc_upset #layout:right
+What I said before wasn’t entirely true. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+What? #speaker: Peyton #portrait:mc_upset #layout:right
+My job pays okay, it doesn’t pay enough for my whole family that’s true. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+I have been getting bonuses though. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+I’ve been keeping them to myself, in a separate account. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+Oh… shouldn’t you… #speaker: Peyton #portrait:mc_upset #layout:right
+A man has to have something that’s his, right? #speaker:Tired Man #portrait:npc4_neutral #layout:left
+Uh, sure. #speaker: Peyton #portrait:mc_upset #layout:right
+If a man’s going to be anything he has to have something for himself. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+That money’s mine, I earned it, and I get to do what I want with it. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+O-oh okay, yeah it’s all yours. #speaker: Peyton #portrait:mc_upset #layout:right
+Mhmm. #speaker:Tired Man #portrait:npc4_neutral #layout:left
+… #speaker: Peyton #portrait:mc_upset #layout:right
+~ tired_current_dialogue = "3"
 -> END
 
