@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3369658958994317377}
   - component: {fileID: 5303425880575133737}
   - component: {fileID: 3918252166273374944}
+  - component: {fileID: 1621779732632437943}
   m_Layer: 0
   m_Name: arrowRightPrefab
   m_TagString: Untagged
@@ -135,7 +136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCamera: {fileID: 0}
-  distanceToMove: 20
+  Camera: {fileID: 0}
+  motion: {fileID: 0}
+  motionToPlay: CameraRight
 --- !u!114 &3369658958994317377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,3 +262,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1621779732632437943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6436248548603573894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d4f8793e51d5b4e9484630701947af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 0}
+  motion: {fileID: 0}
+  motionToPlay: CameraRight

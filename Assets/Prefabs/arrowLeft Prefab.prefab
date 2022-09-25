@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7566750915544724275}
   - component: {fileID: 7566750915544724274}
   - component: {fileID: 7566750915544724273}
-  - component: {fileID: 7566750915544724276}
   - component: {fileID: 5913735462585640475}
   - component: {fileID: 6764783348913277028}
   - component: {fileID: 5073368249265446462}
+  - component: {fileID: 6644226094278328524}
   m_Layer: 0
   m_Name: arrowLeft Prefab
   m_TagString: Untagged
@@ -121,20 +121,6 @@ PolygonCollider2D:
       - {x: 0.19999999, y: -0.12}
       - {x: 0.19999999, y: 0.089999996}
       - {x: 0.06, y: 0.17999999}
---- !u!114 &7566750915544724276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7566750915544724272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688b5668ef120ad49835de5ac2fc12f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameCamera: {fileID: 0}
-  distanceToMove: -20
 --- !u!114 &5913735462585640475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +244,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OriginalArrows: {fileID: 0}
   NewArrows: {fileID: 0}
+--- !u!114 &6644226094278328524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7566750915544724272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d4f8793e51d5b4e9484630701947af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 0}
+  motion: {fileID: 0}
+  motionToPlay: CameraLeft
