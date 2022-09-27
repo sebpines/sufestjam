@@ -8,7 +8,7 @@ public class moveCamera : MonoBehaviour
     public GameObject gameCamera;
     //public float distanceToMove = 20;
     public Animator motion;
-    public Animator still
+    public Animator still;
     public string motionToPlay;
 
     void Start()
@@ -21,7 +21,7 @@ public class moveCamera : MonoBehaviour
         //gameCamera.transform.position += Vector3.right * distanceToMove;
         motion.Play(motionToPlay);
         Debug.Log("animation");
-        ]
+        
         
 
     }
