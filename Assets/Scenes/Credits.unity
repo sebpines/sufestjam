@@ -440,7 +440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 196}
+  m_AnchoredPosition: {x: 0, y: 205}
   m_SizeDelta: {x: 134.76, y: 32.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996946528
@@ -625,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: 68}
-  m_SizeDelta: {x: 289.13, y: 118.76}
+  m_AnchoredPosition: {x: 16, y: 81}
+  m_SizeDelta: {x: 289.13, y: 203.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326211818
 MonoBehaviour:
@@ -648,7 +648,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Len ____ \tWriting & Code\t\n@_____\n\nHolly Thomas \tArt & Code\n@planplantsillus\n"
+  m_text: "Writing & Code by Seb Pines\n@smolghost \nthemostrous.ca\n\nArt & Code
+    by Holly Thomas \n@planplantsillus\nholly-thomas.ca"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b599999b2ce8ccd408a7034a3004fc8b, type: 2}
   m_sharedMaterial: {fileID: 5036085961386045191, guid: b599999b2ce8ccd408a7034a3004fc8b, type: 2}
