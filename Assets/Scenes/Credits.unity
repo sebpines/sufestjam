@@ -648,7 +648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Writing & Code by Seb Pines\n@smolghost \nthemostrous.ca\n\nArt & Code
+  m_text: "Writing & Code by Seb Pines\n@smolghost \nthemonstrous.me\n\nArt & Code
     by Holly Thomas \n@planplantsillus\nholly-thomas.ca"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b599999b2ce8ccd408a7034a3004fc8b, type: 2}
