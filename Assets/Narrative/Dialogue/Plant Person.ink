@@ -1,4 +1,4 @@
-Pardon my roots, they keep trying to take hold everywhere, they may be a bit of a tripping hazard. #speaker:Plant Person #portrait:npc15_neutral #layout:left
+Pardon my roots, they keep trying to take hold everywhere, they may be a bit of a tripping hazard. #speaker:Plant Person #portrait:npc15_neutral #layout:left #character:npc15
 Oh they are no– #speaker: Peyton #portrait:mc_happy #layout:right
 OOP! #speaker: Peyton #portrait:mc_upset #layout:right
 They are fine. #speaker: Peyton #portrait:mc_happy #layout:right

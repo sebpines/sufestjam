@@ -1,4 +1,4 @@
-Do you believe there is life after death? #speaker:Well Dressed Man #portrait:npc14_neutral #layout:left
+Do you believe there is life after death? #speaker:Well Dressed Man #portrait:npc14_neutral #layout:left #character:npc14
 Not as in an afterlife, but a person, a name, can still have life. #speaker:Well Dressed Man #portrait:npc14_neutral #layout:left
 That what one has made and accomplished can continue to live on and thrive long after its namesake ceases to be? #speaker:Well Dressed Man #portrait:npc14_neutral #layout:left
 I believe so, we live on by those who remember us and who cherished us.  #speaker: Peyton #portrait:mc_happy #layout:right

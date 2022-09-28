@@ -1,4 +1,4 @@
-Hello there. #speaker:Lounging Commuter #portrait:npc11_happy #layout:left
+Hello there. #speaker:Lounging Commuter #portrait:npc11_happy #layout:left #character:npc11
 Oh hi! #speaker: Peyton #portrait:mc_happy #layout:right
 What journey are you on little thing? #speaker:Lounging Commuter #portrait:npc11_neutral #layout:left
 I’m going into the city for a few things, meetings, interviews, and appointments. #speaker: Peyton #portrait:mc_happy #layout:right

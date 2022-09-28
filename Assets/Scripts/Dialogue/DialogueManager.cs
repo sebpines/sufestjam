@@ -21,7 +21,8 @@ public class DialogueManager : MonoBehaviour
 [SerializeField] private TextMeshProUGUI dialogueText;
 [SerializeField] private TextMeshProUGUI displayNameText;
 [SerializeField] private Animator portraitAnimator;
-private Animator layoutAnimator;
+[SerializeField] private Animator characterAnimator;
+    private Animator layoutAnimator;
 public Button m_dialogCont;
 public GameObject arrowNav;
 
@@ -38,8 +39,9 @@ public GameObject arrowNav;
   private const string SPEAKER_TAG = "speaker";
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
-  
-  private NarrativeVariables narrativeVariables;
+  private const string CHARACTER_TAG = "character";
+
+    private NarrativeVariables narrativeVariables;
   
   private void Awake()
   {
@@ -187,6 +189,9 @@ public GameObject arrowNav;
             break;
             case PORTRAIT_TAG:
             portraitAnimator.Play(tagValue);
+            break;
+            case CHARACTER_TAG:
+            characterAnimator.Play(tagValue);
             break;
             case LAYOUT_TAG:
             layoutAnimator.Play(tagValue);

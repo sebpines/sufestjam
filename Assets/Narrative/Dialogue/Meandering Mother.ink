@@ -1,4 +1,4 @@
-Hello dear, are you a student? #speaker:Meandering Mother #portrait:npc13_neutral #layout:left
+Hello dear, are you a student? #speaker:Meandering Mother #portrait:npc13_neutral #layout:left #character:npc13
 I used to be, not anymore.  #speaker: Peyton #portrait:mc_happy #layout:right
 You graduated! Congratulations! That's a great accomplishment. #speaker:Meandering Mother #portrait:npc13_happy #layout:left
 Er, well… I didn't finish, I just kind of stopped going.  #speaker: Peyton #portrait:mc_upset #layout:right

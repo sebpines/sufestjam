@@ -1,4 +1,4 @@
-Is the ride much longer? #speaker:Person on Fire #portrait:npc10_neutral #layout:left
+Is the ride much longer? #speaker:Person on Fire #portrait:npc10_neutral #layout:left #character:npc10
 I think we may be at the station soon, hard to tell from in here. #speaker: Peyton #portrait:mc_happy #layout:right
 Wonderful, I’m finding this train quite stifling. Though I cannot remember how long I’ve been on it. #speaker:Person on Fire #portrait:npc10_neutral #layout:left
 I cannot remember much these days, it’s hard to hold on to the days. #speaker:Person on Fire #portrait:npc10_neutral #layout:left

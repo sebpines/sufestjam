@@ -1,4 +1,4 @@
-Hi, sorry about all my stuff. #speaker:Clutter Keeper #portrait:npc12_neutral #layout:left
+Hi, sorry about all my stuff. #speaker:Clutter Keeper #portrait:npc12_neutral #layout:left #character:npc12
 If you were looking for a place to sit in here, there isn't one. #speaker:Clutter Keeper #portrait:npc12_neutral #layout:left
 That's okay, just passing through the cars. #speaker: Peyton #portrait:mc_happy #layout:right
 Is all this really yours? #speaker: Peyton #portrait:mc_happy #layout:right
