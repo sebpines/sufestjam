@@ -5,7 +5,6 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-//using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -21,8 +20,7 @@ public class DialogueManager : MonoBehaviour
 [SerializeField] private TextMeshProUGUI dialogueText;
 [SerializeField] private TextMeshProUGUI displayNameText;
 [SerializeField] private Animator portraitAnimator;
-[SerializeField] private Animator characterAnimator;
-    private Animator layoutAnimator;
+private Animator layoutAnimator;
 public Button m_dialogCont;
 public GameObject arrowNav;
 
@@ -39,18 +37,18 @@ public GameObject arrowNav;
   private const string SPEAKER_TAG = "speaker";
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
-  private const string CHARACTER_TAG = "character";
-
-    private NarrativeVariables narrativeVariables;
+  public bool dialogEnd = false;
+  
+  private NarrativeVariables narrativeVariables;
   
   private void Awake()
   {
-    if (instance != null)
+        if (instance != null)
         {
         Debug.LogWarning("Found more than one Dialogue Manager in scene");
         }
     instance = this;
-    narrativeVariables = new NarrativeVariables(loadGlobalsJSON.text);
+    narrativeVariables = new NarrativeVariables(loadGlobalsJSON);
   }
   
   public static DialogueManager GetInstance()
@@ -102,6 +100,7 @@ public GameObject arrowNav;
     dialogueText.text = "";
     arrowNav.SetActive(true);
     narrativeVariables.StopListening(currentStory);
+    dialogEnd = true;
   }
   
   public void ContinueStory()
@@ -189,9 +188,6 @@ public GameObject arrowNav;
             break;
             case PORTRAIT_TAG:
             portraitAnimator.Play(tagValue);
-            break;
-            case CHARACTER_TAG:
-            characterAnimator.Play(tagValue);
             break;
             case LAYOUT_TAG:
             layoutAnimator.Play(tagValue);
