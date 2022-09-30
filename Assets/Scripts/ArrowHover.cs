@@ -3,24 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowHover : MonoBehaviour
-{ 
+{
     //SpriteRenderer sprite;
-    public AudioSource OverSFX;
+
+    public AudioSource sfx;
+    public Animator motion;
+    //public string motionToPlay;
+   
+
+    
+    
     void Start()
     {
-        //sprite = GetComponent<SpriteRenderer>();
-        //sprite.color = new Color(1, 1, 1, 1);
+        motion = this.GetComponent<Animator>();
+        sfx = this.GetComponent<AudioSource>();
+        
     }
-
     void OnMouseEnter()
     {
-        //sprite.color = new Color(1, 1, 1, 1);
-        OverSFX.Play();
+        motion.Play("HoverOver");
+        Debug.Log("Hover");
     }
-
+ 
+    
     void OnMouseExit()
     {
-        //sprite.color = new Color(1, 1, 1, 0);
+        motion.Play("HoverExit");
     }
+
+    void OnMouseDown()
+    {
+        sfx.Play();
+    }
+
 }
 

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8758198103063714809}
   - component: {fileID: 5192572059807855191}
   - component: {fileID: 4618047539206595553}
+  - component: {fileID: 8176785711445161414}
   m_Layer: 0
   m_Name: arrowsForwardPrefab
   m_TagString: Untagged
@@ -138,7 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4133ea705a2b45b9bf912d1e7dd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverSFX: {fileID: 0}
+  sfx: {fileID: 0}
+  motion: {fileID: 0}
 --- !u!114 &2553221081022949440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,3 +396,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &8176785711445161414
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569664598681544253}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1bbbb8bab54bfc84a9e7a48f13d626c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

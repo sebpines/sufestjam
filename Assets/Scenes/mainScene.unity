@@ -642,11 +642,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6569664598681544255, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
   m_PrefabInstance: {fileID: 1890391217}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &66731380 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8758198103063714809, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
-  m_PrefabInstance: {fileID: 1890391217}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &76432547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 132373616488429007, guid: d4f4024cfaa104e3b98e5c1b390bd25e, type: 3}
@@ -870,7 +865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4133ea705a2b45b9bf912d1e7dd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverSFX: {fileID: 124992682}
+  sfx: {fileID: 0}
+  motion: {fileID: 0}
 --- !u!114 &124992681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2428,11 +2424,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5671407134944675323, guid: ecbcf2d69a2904befba51403815a18e6, type: 3}
   m_PrefabInstance: {fileID: 296741209}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &307555160 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6764783348913277028, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
-  m_PrefabInstance: {fileID: 1243403135}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &308538665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3758,6 +3749,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &487838258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6569664598681544253, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
+  m_PrefabInstance: {fileID: 1890391217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &488537572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4062,11 +4058,6 @@ CanvasRenderer:
 --- !u!4 &506775227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6569664598681544255, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
-  m_PrefabInstance: {fileID: 1975872613}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &506775228 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4618047539206595553, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
   m_PrefabInstance: {fileID: 1975872613}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &509211755
@@ -5663,11 +5654,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.5}
       - {x: 0.5, y: -0.5}
       - {x: 0.5, y: 0.5}
---- !u!82 &781668849 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3918252166273374944, guid: a6529a30a70b1f34495f4feb00801d6b, type: 3}
-  m_PrefabInstance: {fileID: 1226167548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &802451980
 GameObject:
   m_ObjectHideFlags: 0
@@ -6726,7 +6712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919737058}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.95, y: 0.97, z: 0}
+  m_LocalPosition: {x: -8.1, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1092207816}
@@ -8706,7 +8692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4133ea705a2b45b9bf912d1e7dd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverSFX: {fileID: 1213025026}
+  sfx: {fileID: 0}
+  motion: {fileID: 0}
 --- !u!114 &1213025024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8911,10 +8898,6 @@ PrefabInstance:
       propertyPath: gameCamera
       value: 
       objectReference: {fileID: 64220234}
-    - target: {fileID: 3369658958994317377, guid: a6529a30a70b1f34495f4feb00801d6b, type: 3}
-      propertyPath: OverSFX
-      value: 
-      objectReference: {fileID: 781668849}
     - target: {fileID: 5303425880575133737, guid: a6529a30a70b1f34495f4feb00801d6b, type: 3}
       propertyPath: NewArrows
       value: 
@@ -9002,12 +8985,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1360830752}
     - target: {fileID: 5913735462585640475, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
-      propertyPath: OverSFX
+      propertyPath: arrow
       value: 
-      objectReference: {fileID: 307555160}
+      objectReference: {fileID: 1620981792}
     - target: {fileID: 5913735462585640475, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: motion
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913735462585640475, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: arrowMaster
+      value: 
+      objectReference: {fileID: 208148217}
+    - target: {fileID: 5913735462585640475, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: motionToPlay
+      value: HoverOver
       objectReference: {fileID: 0}
     - target: {fileID: 6644226094278328524, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
       propertyPath: gameCamera
@@ -9072,6 +9063,18 @@ PrefabInstance:
     - target: {fileID: 7566750915544724273, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
       value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566750915544724274, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566750915544724274, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566750915544724274, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7566750915544724275, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
       propertyPath: m_RootOrder
@@ -10435,7 +10438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4133ea705a2b45b9bf912d1e7dd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverSFX: {fileID: 1431646498}
+  sfx: {fileID: 0}
+  motion: {fileID: 0}
 --- !u!82 &1431646498
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12221,6 +12225,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6436248548603573891, guid: a6529a30a70b1f34495f4feb00801d6b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436248548603573891, guid: a6529a30a70b1f34495f4feb00801d6b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436248548603573891, guid: a6529a30a70b1f34495f4feb00801d6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
       objectReference: {fileID: 0}
@@ -12912,6 +12924,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4f4024cfaa104e3b98e5c1b390bd25e, type: 3}
+--- !u!1 &1620981792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7566750915544724272, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+  m_PrefabInstance: {fileID: 1243403135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1663992373
 GameObject:
   m_ObjectHideFlags: 0
@@ -13401,7 +13418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1715374189
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14227,9 +14244,17 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7963844115108999711, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
-      propertyPath: OverSFX
+      propertyPath: arrow
       value: 
-      objectReference: {fileID: 66731380}
+      objectReference: {fileID: 487838258}
+    - target: {fileID: 7963844115108999711, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
+      propertyPath: arrowMaster
+      value: 
+      objectReference: {fileID: 208148217}
+    - target: {fileID: 7963844115108999711, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
+      propertyPath: motionToPlay
+      value: HoverOver
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
 --- !u!1 &1904332741
@@ -14979,7 +15004,7 @@ PrefabInstance:
     - target: {fileID: 7963844115108999711, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
       propertyPath: OverSFX
       value: 
-      objectReference: {fileID: 506775228}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9fa4a15b689087458e6fe632eeb5a7e, type: 3}
 --- !u!1 &1985414150
@@ -15226,7 +15251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4133ea705a2b45b9bf912d1e7dd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverSFX: {fileID: 2010530347}
+  sfx: {fileID: 0}
+  motion: {fileID: 0}
 --- !u!114 &2010530345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17141,7 +17167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516024717607795955, guid: 6b23627aa236c83499c25a9da7bf9627, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5516024717607795955, guid: 6b23627aa236c83499c25a9da7bf9627, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17453,7 +17479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0f4133ea705a2b45b9bf912d1e7dd81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverSFX: {fileID: 2134722416}
+  sfx: {fileID: 0}
+  motion: {fileID: 0}
 --- !u!114 &2134722414
 MonoBehaviour:
   m_ObjectHideFlags: 0
