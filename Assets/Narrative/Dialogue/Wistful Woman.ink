@@ -1,4 +1,4 @@
-Hello, would you sit with me a while? I could use the company. #speaker:Wistful Woman #portrait:npc8_neutral #layout:left
+Hello, would you sit with me a while? I could use the company. #speaker:Wistful Woman #portrait:npc8_neutral #layout:left #character:npc8
 Of course. #speaker: Peyton #portrait:mc_happy #layout:right
 Headed to the city for a big event? #speaker: Peyton #portrait:mc_happy #layout:right
 No, I’m afraid the city is not even my end destination, just one of many stops along the way. #speaker:Wistful Woman #portrait:npc8_neutral #layout:left

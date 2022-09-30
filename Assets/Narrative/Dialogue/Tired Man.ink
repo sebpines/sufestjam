@@ -3,7 +3,7 @@ INCLUDE ../globals.ink
 { tired_current_dialogue == "2": -> second_talk |-> main }
 
 === main ===
-… #speaker:Tired Man #portrait:npc4_neutral #layout:left
+… #speaker:Tired Man #portrait:npc4_neutral #layout:left #character:npc4
 Hi #speaker: Peyton #portrait:mc_happy #layout:right
 … #speaker:Tired Man #portrait:npc4_neutral #layout:left
 What do you want? #speaker:Tired Man #portrait:npc4_neutral #layout:left
@@ -52,7 +52,7 @@ Sure. #speaker:Tired Man #portrait:npc4_neutral #layout:left
 -> END
 
 === second_talk ===
-… #speaker:Tired Man #portrait:npc4_neutral #layout:left
+… #speaker:Tired Man #portrait:npc4_neutral #layout:left #character:npc4
 … #speaker: Peyton #portrait:mc_upset #layout:right
 What I said before wasn’t entirely true. #speaker:Tired Man #portrait:npc4_neutral #layout:left
 What? #speaker: Peyton #portrait:mc_upset #layout:right

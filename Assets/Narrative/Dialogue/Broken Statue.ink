@@ -1,4 +1,4 @@
-A piece… went missing… #speaker:Broken Statue #portrait:npc9_neutral #layout:left
+A piece… went missing… #speaker:Broken Statue #portrait:npc9_neutral #layout:left #character:npc9
 I’m not sure what one it was, but I know it’s missing. #speaker:Broken Statue #portrait:npc9_neutral #layout:left
 Have you seen any missing pieces…? #speaker:Broken Statue #portrait:npc9_neutral #layout:left
 I’m sorry I can’t say that I have. #speaker: Peyton #portrait:mc_happy #layout:right

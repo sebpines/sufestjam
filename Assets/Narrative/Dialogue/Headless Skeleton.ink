@@ -1,4 +1,4 @@
-Hey! Have you seen my body? #speaker:Headless Skeleton #portrait:npc16_neutral #layout:left
+Hey! Have you seen my body? #speaker:Headless Skeleton #portrait:npc16_neutral #layout:left #character:npc16
 Just kidding, I know where it is, it’s right next to me! #speaker:Headless Skeleton #portrait:npc16_happy #layout:left
 Does… it hurt? #speaker: Peyton #portrait:mc_happy #layout:right
 My head not being connected to my body? #speaker:Headless Skeleton #portrait:npc16_neutral #layout:left

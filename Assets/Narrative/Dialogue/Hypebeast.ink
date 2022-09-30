@@ -3,7 +3,7 @@ INCLUDE ../globals.ink
 { hypebeast_current_dialogue == "": -> main |-> second_talk }
 
 === main ===
-Hey! Are you going to the show? #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
+Hey! Are you going to the show? #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left #character:npc3
 Oh, hi. No, what show? #speaker: Peyton #portrait:mc_thinking #layout:right
 The Private Label FRTZY Trendz Trade Show! #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
 I’m sorry but I have no idea what that is, it sounds cool though! #speaker: Peyton #portrait:mc_happy #layout:right
@@ -80,6 +80,6 @@ Keep an eye out for me! #speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #
 -> END
 
 === second_talk ===
-Yeah... Those Fiadora N900000000's those would be so sick.#speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
+Yeah... Those Fiadora N900000000's those would be so sick.#speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left #character:npc3
 <i>They seem lost in space thinking about expensive shoes.</i>#speaker:Hoodie Wearing Hypebeast #portrait:npc3_happy #layout:left
 -> END

@@ -1,6 +1,6 @@
 VAR current_dialogue = ""
 
-Pardon me, do you know how much longer until we reach Stonefolk? #speaker: Bashful Traveller #portrait:npc2_neutral #layout:left
+Pardon me, do you know how much longer until we reach Stonefolk? #speaker: Bashful Traveller #portrait:npc2_neutral #layout:left #character:npc2
 Um, I think it’ll still be another three or four hours. #speaker: Peyton #portrait:mc_happy #layout:right
 Gosh, that seems so long, thank you. #speaker: Bashful Traveller #portrait:npc2_neutral #layout:left
 Are you worried about missing your connection or? #speaker: Peyton #portrait:mc_thinking #layout:right

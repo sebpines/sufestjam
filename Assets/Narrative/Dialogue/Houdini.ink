@@ -1,4 +1,4 @@
-<i>He looks at you disinterestedly.</i> #speaker:Houdini #portrait:npc7_neutral #layout:left
+<i>He looks at you disinterestedly.</i> #speaker:Houdini #portrait:npc7_neutral #layout:left #character:npc7
 You… #speaker: Peyton #portrait:mc_happy #layout:right
 + [Offer hand.]
 -> offer_hand

@@ -3,8 +3,8 @@ INCLUDE ../globals.ink
 { busker_current_dialogue == "": -> first_talk |-> second_talk }
 
 === first_talk ===
-Like my tunes? #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
-Sort of, it’s pretty. What song is that? #speaker: Peyton #portrait:mc_thinking #layout:right
+Like my tunes? #speaker: Optimistic Busker #portrait:npc1_happy #layout: #character:npc1
+Sort of, it’s pretty. What song is that? #speaker: Peyton #portrait:mc_thinking #layout:right 
 Doesn’t have a name yet, I’m still working on it. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 Oh… #speaker: Peyton #portrait:mc_thinking #layout:right
 + [Are you a professional musician?]
