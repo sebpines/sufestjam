@@ -10713,20 +10713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.01
   continueHolder: {fileID: 1134958446}
-  globalsInkFile:
-    compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: ca6b7af907dc64c8f87fcce6611d702f, type: 3}
-    jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
-    unhandledCompileErrors: []
-    errors: []
-    warnings: []
-    todos: []
-    parents: []
-    masterInkAssets: []
-    masterInkAsset: {fileID: 0}
-    includePaths: []
-    includes: []
+  loadGlobalsJSON: {fileID: 0}
   dialoguePanel: {fileID: 1715374188}
   dialogueText: {fileID: 404188519}
   displayNameText: {fileID: 1380664590}
@@ -14011,7 +13998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1715374189
 RectTransform:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Ink.UnityIntegration;
+//using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour
 [SerializeField] private GameObject continueHolder;
 
 [Header ("Globals Ink File")]
-[SerializeField] private InkFile globalsInkFile;
+[SerializeField] private TextAsset loadGlobalsJSON;
 
 [Header("Dialogue UI")]
 [SerializeField] private GameObject dialoguePanel;
@@ -50,7 +50,7 @@ public GameObject arrowNav;
         Debug.LogWarning("Found more than one Dialogue Manager in scene");
         }
     instance = this;
-    narrativeVariables = new NarrativeVariables(globalsInkFile.filePath);
+    narrativeVariables = new NarrativeVariables(loadGlobalsJSON.text);
   }
   
   public static DialogueManager GetInstance()
