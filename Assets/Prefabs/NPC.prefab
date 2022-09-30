@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1088746598003520157}
   - component: {fileID: -5487993032693868364}
   - component: {fileID: -5624852875973925839}
-  - component: {fileID: 1525896029116643722}
   - component: {fileID: 2124719733471812969}
   m_Layer: 0
   m_Name: NPC
@@ -146,21 +145,6 @@ MonoBehaviour:
   highlightSprite: {fileID: 0}
   spriteRenderer: {fileID: 0}
   OverSFX: {fileID: 0}
---- !u!114 &1525896029116643722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5671407134944675322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2513e895850844a488229d7549f74e09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deactiveNPC: {fileID: 0}
-  activeNPC: {fileID: 0}
-  overlay: {fileID: 0}
 --- !u!82 &2124719733471812969
 AudioSource:
   m_ObjectHideFlags: 0
