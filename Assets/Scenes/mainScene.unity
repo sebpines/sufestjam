@@ -3277,7 +3277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440932128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.5, y: 29, z: 0}
+  m_LocalPosition: {x: 39.5, y: 27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 681540308}
@@ -7026,7 +7026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053511150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.5, y: 21.5, z: 0}
+  m_LocalPosition: {x: 29.5, y: 19.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2030982336}
@@ -11190,6 +11190,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 111203944}
     m_Modifications:
+    - target: {fileID: 5073368249265446462, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: NewArrows
+      value: 
+      objectReference: {fileID: 440932128}
+    - target: {fileID: 5073368249265446462, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
+      propertyPath: OriginalArrows
+      value: 
+      objectReference: {fileID: 111203943}
     - target: {fileID: 5913735462585640475, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
       propertyPath: OverSFX
       value: 
@@ -15224,10 +15232,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -24.48
       objectReference: {fileID: 0}
+    - target: {fileID: 2961946914010498303, guid: 349445f4b2aab9044b4db093d8c607da, type: 3}
+      propertyPath: gameCamera
+      value: 
+      objectReference: {fileID: 64220234}
     - target: {fileID: 4759559203949044708, guid: 349445f4b2aab9044b4db093d8c607da, type: 3}
       propertyPath: m_Name
       value: arrowBackPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5293308879567085495, guid: 349445f4b2aab9044b4db093d8c607da, type: 3}
+      propertyPath: NewArrows
+      value: 
+      objectReference: {fileID: 111203943}
+    - target: {fileID: 5293308879567085495, guid: 349445f4b2aab9044b4db093d8c607da, type: 3}
+      propertyPath: OriginalArrows
+      value: 
+      objectReference: {fileID: 1333195883}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349445f4b2aab9044b4db093d8c607da, type: 3}
 --- !u!4 &2010530342 stripped
