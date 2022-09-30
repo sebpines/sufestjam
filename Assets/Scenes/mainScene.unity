@@ -12730,22 +12730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2ed61faee064eecb0e12460eb55ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typingSpeed: 0.01
+  typingSpeed: 0.02
   continueHolder: {fileID: 1134958446}
-  globalsInkFile:
-    compileAutomatically: 0
-    inkAsset: {fileID: 102900000, guid: ca6b7af907dc64c8f87fcce6611d702f, type: 3}
-    jsonAssetDirectory: {fileID: 0}
-    jsonAsset: {fileID: 0}
-    unhandledCompileErrors: []
-    errors: []
-    warnings: []
-    todos: []
-    parents: []
-    masterInkAssets: []
-    masterInkAsset: {fileID: 0}
-    includePaths: []
-    includes: []
+  loadGlobalsJSON: {fileID: 4900000, guid: 29640d0ec2ca841f88c2e809be3002d1, type: 3}
   dialoguePanel: {fileID: 1715374188}
   dialogueText: {fileID: 404188519}
   displayNameText: {fileID: 1380664590}
@@ -12755,6 +12742,7 @@ MonoBehaviour:
   choices:
   - {fileID: 1512153975}
   - {fileID: 588491105}
+  dialogEnd: 0
 --- !u!1001 &1416750693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18845,6 +18833,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1968364874}
   - component: {fileID: 1968364875}
+  - component: {fileID: 1968364876}
+  - component: {fileID: 1968364877}
   m_Layer: 0
   m_Name: enginebg_1
   m_TagString: Untagged
@@ -18917,6 +18907,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1968364876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968364873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d740b1d6a3b4203989af8efcb0effa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkJSON: {fileID: 4900000, guid: e002f8c6c17c14c3bb4c281132499d01, type: 3}
+--- !u!61 &1968364877
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968364873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.83, y: 2.56}
+    newSize: {x: 3.83, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.83, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1001 &1975872613
 PrefabInstance:
   m_ObjectHideFlags: 0

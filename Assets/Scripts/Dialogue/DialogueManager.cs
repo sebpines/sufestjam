@@ -5,7 +5,6 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Ink.UnityIntegration;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,7 +13,7 @@ public class DialogueManager : MonoBehaviour
 [SerializeField] private GameObject continueHolder;
 
 [Header ("Globals Ink File")]
-[SerializeField] private InkFile globalsInkFile;
+[SerializeField] private TextAsset loadGlobalsJSON;
 
 [Header("Dialogue UI")]
 [SerializeField] private GameObject dialoguePanel;
@@ -38,17 +37,18 @@ public GameObject arrowNav;
   private const string SPEAKER_TAG = "speaker";
   private const string PORTRAIT_TAG = "portrait";
   private const string LAYOUT_TAG = "layout";
+  public bool dialogEnd = false;
   
   private NarrativeVariables narrativeVariables;
   
   private void Awake()
   {
-    if (instance != null)
+        if (instance != null)
         {
         Debug.LogWarning("Found more than one Dialogue Manager in scene");
         }
     instance = this;
-    narrativeVariables = new NarrativeVariables(globalsInkFile.filePath);
+    narrativeVariables = new NarrativeVariables(loadGlobalsJSON);
   }
   
   public static DialogueManager GetInstance()
@@ -100,6 +100,7 @@ public GameObject arrowNav;
     dialogueText.text = "";
     arrowNav.SetActive(true);
     narrativeVariables.StopListening(currentStory);
+    dialogEnd = true;
   }
   
   public void ContinueStory()
