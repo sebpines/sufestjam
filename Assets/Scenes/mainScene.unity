@@ -10405,7 +10405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typingSpeed: 0.01
   continueHolder: {fileID: 1134958446}
-  loadGlobalsJSON: {fileID: 0}
+  loadGlobalsJSON: {fileID: 4900000, guid: 472d2f4c599a2477ba5c84d22279a56b, type: 3}
   dialoguePanel: {fileID: 1715374188}
   dialogueText: {fileID: 404188519}
   displayNameText: {fileID: 1380664590}
@@ -10416,6 +10416,7 @@ MonoBehaviour:
   choices:
   - {fileID: 1512153975}
   - {fileID: 588491105}
+  dialogEnd: 0
 --- !u!1 &1431646493 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4759559203949044708, guid: 349445f4b2aab9044b4db093d8c607da, type: 3}
