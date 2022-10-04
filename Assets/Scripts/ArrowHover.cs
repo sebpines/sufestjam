@@ -19,7 +19,7 @@ public class ArrowHover : MonoBehaviour
         sfx = this.GetComponent<AudioSource>();
         
     }
-    void OnMouseEnter()
+    void OnMouseOver()
     {
         motion.Play("HoverOver");
         Debug.Log("Hover");
