@@ -7,6 +7,7 @@ public class VolumeSlider : MonoBehaviour
 {
     public AudioMixer Mixer;
 
+  
     public void SetVolume (float volume)
     {
         Debug.Log(volume);
