@@ -61,6 +61,7 @@ Well, it’ll be nice to see you if you can make it out. #speaker: Optimistic Bu
 I better get back to finishing this song. Hopefully, I’ll see you around. #speaker: Optimistic Busker #portrait:npc1_neutral #layout:left
 See you around! #speaker: Peyton #portrait:mc_happy #layout:right
 ~ busker_current_dialogue = "visited"
+~ ending = ending + 1
 -> END
 
 === second_talk ===

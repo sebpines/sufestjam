@@ -5,6 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -88,6 +89,10 @@ public GameObject arrowNav;
   public void EnterDialogueMode(TextAsset inkJSON)
   {
     currentStory = new Story(inkJSON.text);
+        currentStory.BindExternalFunction("loadScene", (string name) => {
+            SceneManager.LoadScene(name);
+        });
+
     dialogueIsPlaying = true;
     dialoguePanel.SetActive(true);
     arrowNav.SetActive(false);

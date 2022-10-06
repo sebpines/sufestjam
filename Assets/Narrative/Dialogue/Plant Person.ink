@@ -1,3 +1,10 @@
+INCLUDE ../globals.ink
+
+{ plant_current_dialogue == "": -> plant_first_talk }
+{ plant_current_dialogue == "2": -> plant_second_talk }
+{ plant_current_dialogue == "3": -> plant_final_talk  }
+
+=== plant_first_talk ===
 Pardon my roots, they keep trying to take hold everywhere, they may be a bit of a tripping hazard. #speaker:Plant Person #portrait:npc15_neutral #layout:left #character:npc15
 Oh they are no– #speaker: Peyton #portrait:mc_happy #layout:right
 OOP! #speaker: Peyton #portrait:mc_upset #layout:right
@@ -44,4 +51,34 @@ Tempting, hah, but I think I need something else. #speaker: Peyton #portrait:mc_
 Less land, more people. #speaker: Peyton #portrait:mc_happy #layout:right
 A nutrient-rich environment is a health environment. #speaker:Plant Person #portrait:npc15_happy #layout:left
 Hah, that it is… #speaker: Peyton #portrait:mc_happy #layout:right
+~ plant_current_dialogue = "2"
 -> END
+
+=== plant_second_talk ===
+It’s nice to grow, isn’t it? #speaker:Plant Person #portrait:npc15_happy #layout:left #character:npc15
+It is, I think? #speaker: Peyton #portrait:mc_happy #layout:right
+I’m sure you’re doing it all the time, even if you can’t see it. #speaker:Plant Person #portrait:npc15_happy #layout:left
+I haven’t felt like I’ve done any growing for a good long while. #speaker: Peyton #portrait:mc_sad #layout:right
+Then perhaps your environment is not facilitating it. #speaker:Plant Person #portrait:npc15_happy #layout:left
+Well… #speaker: Peyton #portrait:mc_thinking #layout:right
+Some plants are content to grow within the confines of their containers. They will be happy with what they have. #speaker:Plant Person #portrait:npc15_happy #layout:left
+Some plants grow despite their containers, roots, and leaves spilling out. They are content to make do with what they have, they are resilient. #speaker:Plant Person #portrait:npc15_happy #layout:left
+And some plants desire to grow greater than their containers offer them, and if they are not given more room to grow they will wither and wilt. #speaker:Plant Person #portrait:npc15_happy #layout:left
+We all have different needs and different ways of growing. #speaker:Plant Person #portrait:npc15_happy #layout:left
+Perhaps you need to figure out what you need to grow. #speaker:Plant Person #portrait:npc15_happy #layout:left
+Uh yeah, huh. #speaker: Peyton #portrait:mc_thinking #layout:right
+I guess I never thought of it that way. #speaker: Peyton #portrait:mc_thinking #layout:right
+We’re all living growing things, and we all have our own needs. #speaker:Plant Person #portrait:npc15_happy #layout:left
+Sometimes we can’t understand our own until we see our needs mirrored in another. #speaker:Plant Person #portrait:npc15_happy #layout:left
+… You got a point there. #speaker: Peyton #portrait:mc_thinking #layout:right
+I hope your find what you need to grow. #speaker:Plant Person #portrait:npc15_happy #layout:left
+You too. #speaker: Peyton #portrait:mc_happy #layout:right
+Thank you, but I already have. #speaker:Plant Person #portrait:npc15_happy #layout:left
+~ plant_current_dialogue = "3"
+~ ending = ending + 1
+-> END
+
+=== plant_final_talk ===
+<i>Their eyes are closed and they seem to be enjoying the feeling of their feet soaking in the river. They are lost in this small moment.</i> #character:npc15
+-> END
+

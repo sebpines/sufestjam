@@ -4,7 +4,7 @@ I wish I had more time to stay.
 Maybe I can… #speaker: Peyton #portrait:mc_thinking #layout:right
 Even if just for another day or two.
 Maybe I can even stay for the whole week.
-#character: ticketsopen
+#character:ticketsopen
 Ah, but this ticket.
 #character:ticketsclose
 Hm…
