@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class ArrowHover : MonoBehaviour
 {
-    //SpriteRenderer sprite;
-
-    public AudioSource sfx;
     public Animator motion;
-    //public string motionToPlay;
    
-
-    
-    
     void Start()
     {
         motion = this.GetComponent<Animator>();
-        sfx = this.GetComponent<AudioSource>();
         
     }
     void OnMouseOver()
@@ -30,11 +22,5 @@ public class ArrowHover : MonoBehaviour
     {
         motion.Play("HoverExit");
     }
-
-    void OnMouseDown()
-    {
-        sfx.Play();
-    }
-
 }
 
