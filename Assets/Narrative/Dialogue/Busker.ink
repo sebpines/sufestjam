@@ -44,9 +44,9 @@ Well now I <b><i>really</i></b> hope you attract a good crowd, even at least so 
 <i>Laughs.</i> #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Thanks. Maybe I’ll see you around? Think you can catch one of my little shows? #speaker: Optimistic Busker #portrait:npc1_happy #layout:left
 Well... #speaker: Peyton #portrait:mc_thinking #layout:right
-+ [You can count on me! I’ll be your new number 1 fan.]
++ [You can count on me! I’m your newest fan.]
 -> new_fan
-+ [I’m not sure if I’ll have time to make it, but I’ll try…]
++ [I’m not sure if I’ll have time, but I’ll try…]
 -> noncommittal_fan
 
 === new_fan ===

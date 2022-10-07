@@ -79,6 +79,6 @@ Maybe not… #speaker: Peyton #portrait:mc_happy #layout:right
 -> END
 
 === statue_final_talk ===
-<i>They are sitting by the edge of the stream motionless, it is only seeing them thing still and quiet that you realize they are a statue.</i> #character:npc9
+<i>They are sitting by the edge of the stream motionless, it is only seeing them thing still and quiet that you realize they are a statue.</i> #speaker:Broken Statue #portrait:npc9_neutral #layout:left #character:npc9
 -> END
 

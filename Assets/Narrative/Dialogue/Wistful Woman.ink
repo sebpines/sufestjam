@@ -97,17 +97,17 @@ Indeed we do. #speaker:Wistful Woman #portrait:npc8_happy #layout:left
 Thank you for chatting me, it is a refreshing change to be so honest with someone. #speaker:Wistful Woman #portrait:npc8_happy #layout:left #character:npc8
 Oh, yeah no problem! #speaker: Peyton #portrait:mc_happy #layout:right
 No better person than a stranger to tell all your problems to. #speaker: Peyton #portrait:mc_happy #layout:right
-You’re right about that. #speaker:Wistful Woman #portrait:npc8_happy #layout:lef
+You’re right about that. #speaker:Wistful Woman #portrait:npc8_happy #layout:left
 Shall we enjoy the scenery for a bit? #speaker: Peyton #portrait:mc_happy #layout:right
-Yes, please. #speaker:Wistful Woman #portrait:npc8_happy #layout:lef
+Yes, please. #speaker:Wistful Woman #portrait:npc8_happy #layout:left
 … #speaker: Peyton #portrait:mc_happy #layout:right
-… #speaker:Wistful Woman #portrait:npc8_happy #layout:lef
+… #speaker:Wistful Woman #portrait:npc8_happy #layout:left
 … #speaker: Peyton #portrait:mc_happy #layout:right
-… #speaker:Wistful Woman #portrait:npc8_happy #layout:lef
+… #speaker:Wistful Woman #portrait:npc8_happy #layout:left
 ~ wistful_current_dialogue = "5"
 ~ ending = ending + 1
 -> END
 
 === wistful_final_talk ===
-<i>You can see her sitting with her eyes closed, you are unsure if she is asleep or not, but decide not to disturb her regardless.</i> #character:npc8
+<i>You can see her sitting with her eyes closed, you are unsure if she is asleep or not, but decide not to disturb her regardless.</i> #speaker:Wistful Woman #portrait:npc8_happy #layout:left #character:npc8
 -> END

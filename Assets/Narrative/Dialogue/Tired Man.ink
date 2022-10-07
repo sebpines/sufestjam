@@ -152,5 +152,5 @@ Yeah…  #speaker: Peyton #portrait:mc_thinking #layout:right
 -> END
 
 === tired_final_talk ===
-<i>He’s staring out the window, deep in thought with his back to you. His posture tells you that he has nothing more to say to you.</i> #character:npc4
+<i>He’s staring out the window, deep in thought with his back to you. His posture tells you that he has nothing more to say to you.</i> #speaker:Tired Man #portrait:npc4_neutral #layout:left #character:npc4
 -> END

@@ -111,6 +111,6 @@ Yeah of course. #speaker:Clutter Keeper #portrait:npc12_happy #layout:left
 -> END
 
 === clutter_final_talk ===
-<i>They are  preoccupied sorting through the piles of stuff all around them.</i> #character:npc12
+<i>They are  preoccupied sorting through the piles of stuff all around them.</i> #speaker:Clutter Keeper #portrait:npc12_happy #layout:left #character:npc12
 -> END
 

@@ -78,5 +78,5 @@ Mm.. #speaker:Person on Fire #portrait:npc10_neutral #layout:left
 -> END
 
 === fire_final_talk ===
-<i>They are lost in thought, staring off at something you cannot see.</i> #character:npc10
+<i>They are lost in thought, staring off at something you cannot see.</i> #speaker:Person on Fire #portrait:npc10_neutral #layout:left #character:npc10
 -> END

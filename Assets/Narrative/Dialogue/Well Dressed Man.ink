@@ -134,7 +134,7 @@ Do they like what they do? Are they happy to be a dancer or a doctor or whatever
 Well I would assume through pursuing the things they are passionate they would be happy? #speaker:Well Dressed Man #portrait:npc14_neutral #layout:left
 So you don’t know? If your kids are happy? Or if they are just working hard to do something important or be the best at something? #speaker: Peyton #portrait:mc_sad #layout:right
 I… #speaker:Well Dressed Man #portrait:npc14_sad #layout:left
-It’s really easy to be miserable while chasing down the thing that you think you should be, trust me, I know.
+It’s really easy to be miserable while chasing down the thing that you think you should be, trust me, I know. #speaker: Peyton #portrait:mc_sad #layout:right
 How do you know? #speaker:Well Dressed Man #portrait:npc14_sad #layout:left
 Because at many points in my life I’ve just worked so hard to be the thing I thought I wanted to be. Or, truly, I was trying to be the thing that my parents wanted me to be. #speaker: Peyton #portrait:mc_sad #layout:right
 But that wasn’t who I was or what I wanted for myself, and it made me miserable. #speaker: Peyton #portrait:mc_sad #layout:right
@@ -150,7 +150,7 @@ Well, at least you can admit it! #speaker: Peyton #portrait:mc_happy #layout:rig
 I’m sure things aren’t as hard for them cause they don’t have to work a job to feed you. #speaker: Peyton #portrait:mc_happy #layout:right
 <i>Laughs.</i> #speaker: Peyton #portrait:mc_happy #layout:right
 Sorry, that was inappropriate. #speaker: Peyton #portrait:mc_sad #layout:right
-It is alright. It offers me a frame of reference that I feel is much needed. #speaker:Well Dressed Man #portrait:npc14_sadl #layout:left
+It is alright. It offers me a frame of reference that I feel is much needed. #speaker:Well Dressed Man #portrait:npc14_sad #layout:left
 Oh, well… you’re welcome? #speaker: Peyton #portrait:mc_happy #layout:right
 Yes, thank you for your conversation. #speaker:Well Dressed Man #portrait:npc14_neutral #layout:left
 I see I have been misguided on some important things for far too long. #speaker:Well Dressed Man #portrait:npc14_sad #layout:left
@@ -190,7 +190,7 @@ Yes, cool. #speaker:Well Dressed Man #portrait:npc14_happy #layout:left
 -> END
 
 === dressed_final_talk ===
-<i>He smiles at you warmly, and then goes back to overviewing some papers he was reading.</i> #character:npc14
+<i>He smiles at you warmly, and then goes back to overviewing some papers he was reading.</i> #speaker:Well Dressed Man #portrait:npc14_happy #layout:left #character:npc14
 -> END
 
 
