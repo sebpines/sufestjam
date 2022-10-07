@@ -650,7 +650,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: bfacbcce407823c4ca49cd14fbf565c1, type: 2}
   m_audioClip: {fileID: 8300000, guid: b7ec06e19a45ed14fb986005935f5880, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.374
+  m_Volume: 0.04
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9458,10 +9458,6 @@ PrefabInstance:
       propertyPath: gameCamera
       value: 
       objectReference: {fileID: 64220234}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7566750915544724272, guid: 62aeb58150f4abf448aed6295846d6df, type: 3}
       propertyPath: m_Name
       value: 'arrowLeft Prefab '
@@ -14182,7 +14178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1765880781
 Transform:
   m_ObjectHideFlags: 0
