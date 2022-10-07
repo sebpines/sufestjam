@@ -1,7 +1,8 @@
 INCLUDE ../globals.ink
 
-{ bashful_current_dialogue == "": -> bashful_first_talk |-> bashful_final_talk }
-{ bashful_current_dialogue == "2": -> bashful_second_talk |-> bashful_final_talk  }
+{ bashful_current_dialogue == "": -> bashful_first_talk }
+{ bashful_current_dialogue == "2": -> bashful_second_talk }
+{ bashful_current_dialogue == "3": -> bashful_final_talk  }
 
 === bashful_first_talk ===
 Pardon me, do you know how much longer until we reach Stonefolk? #speaker: Bashful Traveller #portrait:npc2_neutral #layout:left #character:npc2
@@ -64,23 +65,23 @@ Hey, which one do you like best? #speaker: Bashful Traveller #portrait:npc2_neut
 Hmm… #speaker: Peyton #portrait:mc_thinking #layout:right
 + [I kind of like Pants, it’s cute]
 -> pants_name
-+  [Steven, definitely Steven. A strong name for a cat]
++  [Steven. A strong name for a cat]
 -> steven_name
 
 === pants_name ===
 It’s such a cute name, isn’t it? I’m just imagining them now, with their little name tag that says Pants. #speaker: Bashful Traveller #portrait:npc2_happy #layout:left
-She drifts off into thought, looking out the train windows. Almost unaware that you are still there.
+<i>She drifts off into thought, looking out the train windows. Almost unaware that you are still there.</i>
 ~ bashful_current_dialogue = "2"
 -> END
 
 === steven_name ===
 It’s such a curious name, isn’t it? I’m just imagining them now, with their little name tag that says Steven. #speaker: Bashful Traveller #portrait:npc2_happy #layout:left
-She drifts off into thought, looking out the train windows. Almost unaware that you are still there.
+<i>She drifts off into thought, looking out the train windows. Almost unaware that you are still there.</i>
 ~ bashful_current_dialogue = "2"
 -> END
 
 === bashful_second_talk ===
-Isn’t moving so exciting? #speaker: Bashful Traveller #portrait:npc2_happy #layout:left
+Isn’t moving so exciting? #speaker: Bashful Traveller #portrait:npc2_happy #layout:left #character:npc2
 Yeah, it can be! I’ve often found it to be really stressful. #speaker: Peyton #portrait:mc_happy #layout:right
 It definitely can be stressful but there is something exciting about moving to a new place and all the small new things that come with it. #speaker: Bashful Traveller #portrait:npc2_happy #layout:left
 Placing your furniture. #speaker: Bashful Traveller #portrait:npc2_happy #layout:left
@@ -99,7 +100,7 @@ Yeah.. Me too… #speaker: Peyton #portrait:mc_happy #layout:right
 -> END
 
 === bashful_final_talk ===
-<i>She is staring out the train window watching the scenery pass by while dreamily lost in thought.</i>
+<i>She is staring out the train window watching the scenery pass by while dreamily lost in thought.</i> #speaker: Bashful Traveller #portrait:npc2_happy #layout:left #character:npc2
 -> END
 
 

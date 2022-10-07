@@ -125,7 +125,7 @@ Of course darling. #speaker:Lounging Commuter #portrait:npc11_happy #layout:left
 -> END
 
 === commuter_final_talk ===
-<i> She gives you a knowing glance before turning and looking out the window.</i> #character:npc11
+<i> She gives you a knowing glance before turning and looking out the window.</i> #speaker:Lounging Commuter #portrait:npc11_happy #layout:left #character:npc11
 -> END
 
 

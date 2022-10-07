@@ -79,6 +79,6 @@ Thank you, but I already have. #speaker:Plant Person #portrait:npc15_happy #layo
 -> END
 
 === plant_final_talk ===
-<i>Their eyes are closed and they seem to be enjoying the feeling of their feet soaking in the river. They are lost in this small moment.</i> #character:npc15
+<i>Their eyes are closed and they seem to be enjoying the feeling of their feet soaking in the river. They are lost in this small moment.</i> #speaker:Plant Person #portrait:npc15_neutral #layout:left #character:npc15
 -> END
 

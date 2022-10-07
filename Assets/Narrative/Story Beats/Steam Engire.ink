@@ -20,7 +20,7 @@ Do I even want to go back home? #speaker: Peyton #portrait:mc_thinking #layout:r
 <I>You eye the fire in the engine, thinking for a brief moment about opening the front of the engine and throwing your ticket in, but you close your hand around the ticket and place it back in your pocket.</i>
 <i>You let out a deep sigh as the hours spent on the train start to sink in and you suddenly feel very tired.</i>
 <i>You walk slowly back to the sleeper car hoping you can get a small amount of sleep before the train arrives in the station.</i>
-…
+...
 ..
 .
 ~ loadScene("Credits")
@@ -31,7 +31,7 @@ Do I even want to go back home? #speaker: Peyton #portrait:mc_thinking #layout:r
 <i>You close the door as the ticket is quickly engulfed into flames and emits a small puff of smoke.</i>
 <i>You feel the strange feeling in your stomach grow into an nervous giddiness as you think about how much of your life you are going to have to rethink tomorrow.</i>
 <i>For now you decide to start with the small things, and skip back to your sleeper cabin to check you luggage that you packed enough socks to last you for the next week.</i>
-…
+...
 ..
 .
 ~ loadScene("Credits")

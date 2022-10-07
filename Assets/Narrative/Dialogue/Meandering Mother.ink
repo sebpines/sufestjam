@@ -92,6 +92,6 @@ Yeah, that’s be nice. #speaker: Peyton #portrait:mc_happy #layout:right
 -> END
 
 === mother_final_talk ===
-<i>She is looking out the window, contentedly watching the landscape as it goes by.</i> #character:npc13
+<i>She is looking out the window, contentedly watching the landscape as it goes by.</i> #speaker:Meandering Mother #portrait:npc13_happy #layout:left #character:npc13
 -> END
 
