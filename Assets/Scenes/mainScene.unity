@@ -2572,7 +2572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &333436600
 Transform:
   m_ObjectHideFlags: 0
@@ -10155,8 +10155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a94b775d61f3a7478ba70da42ec5e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music1: {fileID: 804665042}
-  music2: {fileID: 874649752}
+  musicToPlay: {fileID: 804665042}
+  musicToPause: {fileID: 874649752}
+  backgroundAudio: {fileID: 64220242}
+  backgroundAudioOn: 0
 --- !u!1001 &1226167548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17586,8 +17588,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a94b775d61f3a7478ba70da42ec5e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music1: {fileID: 804665042}
-  music2: {fileID: 874649752}
+  musicToPlay: {fileID: 874649752}
+  musicToPause: {fileID: 804665042}
+  backgroundAudio: {fileID: 64220242}
+  backgroundAudioOn: 1
 --- !u!1 &2066427682
 GameObject:
   m_ObjectHideFlags: 0
